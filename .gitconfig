@@ -1,0 +1,23 @@
+[core]
+  editor="vim"
+  whitespace=2
+
+[user]
+  name="Philippe Ndiaye"
+  email="phndiaye@gmail.com"
+
+[alias]
+  log=log --abrev-commit --graph
+  grep= grep --color=auto --line-number --ignore-case
+
+[color]
+  status=auto
+  branch=auto
+  diff=auto
+
+[color "grep"]
+  filename=cyan bold
+  linenumber=green
+
+[push]
+  default=simple
