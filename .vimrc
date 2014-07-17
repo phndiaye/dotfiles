@@ -15,9 +15,15 @@ set splitbelow splitright
 set clipboard=unnamed
 set autoread
 set nowrap
-set nobackup
-set noswapfile
 
+" Centralize backups, swapfiles and undo directory
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+if exists('&undodir')
+  set undodir=~/.vim/undo
+end
+
+" Set backspace key to work as usual (delete previous character)
 set backspace=2
 set backspace=indent,eol,start
 fixdel
