@@ -74,7 +74,4 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-git_clean_branch() {
-  git branch --merged | grep feature/ | xargs git branch -d
-}
-
+source $HOME/.functions.shell
