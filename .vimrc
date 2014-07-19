@@ -1,9 +1,13 @@
 " ====== [ Common settings ] ======
+
+" Disable Vi compatibility
 set nocompatible
 
+" Always deal with utf-8 encoded characters
 set encoding=utf-8
 set termencoding=utf-8
 
+set t_Co=256
 set lazyredraw
 set showmode
 set number
@@ -15,6 +19,9 @@ set splitbelow splitright
 set clipboard=unnamed
 set autoread
 set nowrap
+
+" Never use any kind of bell, visual or not
+set visualbell t_vb=
 
 " Centralize backups, swapfiles and undo directory
 set backupdir=~/.vim/backups
@@ -28,22 +35,27 @@ set backspace=2
 set backspace=indent,eol,start
 fixdel
 
+" Ignore compiled files, image files, plus some
+" temporary/caching files when fuzzy searching file
 set wildmenu
 set wildmode=longest:full,full
 set wildignore=*.a,*.o,*.exe
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.jpeg,*.png
+set wildignore+=.DS_Store,.git,.hg,.svn
+set wildignore+=*~,*.sw?,*.tmp
 
 " Highlight matched pairs characters
 set showmatch
 set matchpairs+=<:>
 set matchtime=2
 
+" Enable filetype support and turn on syntax highlighting
 filetype on
 filetype indent on
 filetype plugin on
 syntax on
 
 if has('gui_running')
-  set t_Co=256
   set guioptions=aAi
 endif
 
@@ -68,6 +80,14 @@ set expandtab
 set ignorecase smartcase
 set hlsearch
 set incsearch
+
+" Show invisible characters (useful to avoid trailing spaces for example)
+set list
+set listchars=trail:·
+
+" Do not assume a number with a leading zero is an octal and
+" let incrementation/decrementation (^A / ^X) behave as usual.
+set nrformats-=octal
 
 " ====== [ Bundles Management ] ======
 set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -103,13 +123,15 @@ set wildignore+=*.pyc,**/__pycache__
 
 " ====== [ Key binding ] ======
 nmap <silent> <C-n> :silent noh<CR>
+
+" Quick save, quitting, (both), quitting all
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
 nmap <leader>qa :qa<CR>
 
-
 " ====== [ Misc ] ======
+
 " Autoreload .vimrc when there are changes on save.
 augroup vimrcautoreload
   autocmd!
