@@ -96,15 +96,20 @@ call neobundle#begin(expand("~/.vim/bundle/"))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" Productivity booster
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'mattn/emmet-vim'
 
+" Colorschemes
 NeoBundle 'tomasr/molokai'
 
+" Syntax highlighters
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'groenewege/vim-less'
+
 NeoBundleCheck
 
 call neobundle#end()
@@ -120,6 +125,12 @@ endif
 
 " ====== [ VIM as a Python IDE ] ======
 set wildignore+=*.pyc,**/__pycache__
+
+" ====== [ Configure Plugins ] ======
+
+" Vim Emmet
+let g:user_emmet_mode='a'
+
 
 " ====== [ Key binding ] ======
 nmap <silent> <C-n> :silent noh<CR>
