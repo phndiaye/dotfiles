@@ -61,6 +61,12 @@ if has('gui_running')
   set guifont=Monaco:h11
 endif
 
+set statusline=                                 " Override default
+set statusline+=\ %f\ %m\ %r                    " Show filename/path
+set statusline+=%=                              " Set right-side status info after this line
+set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
+set statusline+=\                               " Set ending space
+
 " Rebind the leader key (The ',' key is always right under my finger)
 let mapleader=","
 let g:mapleader=","
