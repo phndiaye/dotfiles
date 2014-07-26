@@ -8,8 +8,8 @@
   email="phndiaye@gmail.com"
 
 [alias]
-  log=log --abrev-commit --graph
-  grep= grep --color=auto --line-number --ignore-case
+  customlog = log --abbrev-commit --graph
+  customgrep=grep --color=auto --line-number --ignore-case
 
 [color]
   status=auto
