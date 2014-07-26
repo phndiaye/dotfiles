@@ -19,6 +19,7 @@ set splitbelow splitright
 set clipboard=unnamed
 set autoread
 set nowrap
+set history=1000
 
 " Never use any kind of bell, visual or not
 set visualbell t_vb=
@@ -57,6 +58,7 @@ syntax on
 
 if has('gui_running')
   set guioptions=aAi
+  set guifont=Monaco:h11
 endif
 
 " Rebind the leader key (The ',' key is always right under my finger)
