@@ -45,7 +45,7 @@ setopt NO_NOMATCH
 
 # Override Oh-My-Zsh git plugin aliases to use custom aliases defined
 # in the .gitconfig file.
-alias gl='git customlog'
+alias glg='git customlog'
 alias gg='git customgrep'
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
