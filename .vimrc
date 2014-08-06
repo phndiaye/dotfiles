@@ -24,17 +24,12 @@ set history=1000
 " Never use any kind of bell, visual or not
 set visualbell t_vb=
 
-" Centralize backups, swapfiles and undo directory
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists('&undodir')
-  set undodir=~/.vim/undo
-end
-
-" Set backspace key to work as usual (delete previous character)
-set backspace=2
-set backspace=indent,eol,start
-fixdel
+" Customize the status line
+set statusline=                                 " Override default
+set statusline+=\ %f\ %m\ %r                    " Show filename/path
+set statusline+=%=                              " Set right-side status info after this line
+set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
+set statusline+=\                               " Set ending space
 
 " Ignore compiled files, image files, plus some
 " temporary/caching files when fuzzy searching file
@@ -60,12 +55,6 @@ if has('gui_running')
   set guioptions=aAi
   set guifont=Monaco:h11
 endif
-
-set statusline=                                 " Override default
-set statusline+=\ %f\ %m\ %r                    " Show filename/path
-set statusline+=%=                              " Set right-side status info after this line
-set statusline+=%l/%L:%v                        " Set <line number>/<total lines>:<column>
-set statusline+=\                               " Set ending space
 
 " Rebind the leader key (The ',' key is always right under my finger)
 let mapleader=","
