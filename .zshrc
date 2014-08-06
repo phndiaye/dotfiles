@@ -41,6 +41,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+setopt NO_NOMATCH
+
 # Override Oh-My-Zsh git plugin aliases to use custom aliases defined
 # in the .gitconfig file.
 alias gl='git customlog'
