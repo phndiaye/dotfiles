@@ -1,7 +1,7 @@
 [core]
   editor="vim"
   whitespace=2
-  autocrlf=true
+  autocrlf = input
 
 [user]
   name="Philippe Ndiaye"
