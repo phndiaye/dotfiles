@@ -105,6 +105,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'bling/vim-airline'
 NeoBundle 'mattn/emmet-vim'
 
 " Colorschemes
@@ -133,6 +134,9 @@ set wildignore+=*.pyc,**/__pycache__
 
 " Vim Emmet
 let g:user_emmet_mode='a'
+
+" Vim Airline
+let g:airline_theme = 'molokai'
 
 
 " ====== [ Key binding ] ======
