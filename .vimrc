@@ -22,6 +22,9 @@ set splitbelow splitright
 set clipboard=unnamed
 set autoread
 set nowrap
+
+set gcr=a:blinkon0
+
 set noswapfile
 set nobackup
 set history=1000
