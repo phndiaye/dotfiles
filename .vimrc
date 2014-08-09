@@ -22,6 +22,8 @@ set splitbelow splitright
 set clipboard=unnamed
 set autoread
 set nowrap
+set noswapfile
+set nobackup
 set history=1000
 
 " Never use any kind of bell, visual or not
