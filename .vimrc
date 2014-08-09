@@ -108,9 +108,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tomasr/molokai'
 
 " Syntax highlighters
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'groenewege/vim-less'
+NeoBundle 'sheerun/vim-polyglot'
 
 NeoBundleCheck
 
