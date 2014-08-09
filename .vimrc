@@ -8,6 +8,9 @@ set encoding=utf-8
 set termencoding=utf-8
 
 set t_Co=256
+if !has('gui_running')
+  set term=color_xterm
+end
 set lazyredraw
 set showmode
 set number
