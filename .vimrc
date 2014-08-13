@@ -106,6 +106,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'mileszs/ack.vim'
 NeoBundle 'mattn/emmet-vim'
 
 " Colorschemes
