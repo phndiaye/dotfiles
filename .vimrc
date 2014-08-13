@@ -143,11 +143,22 @@ let g:airline_theme = 'molokai'
 " ====== [ Key binding ] ======
 nmap <silent> <C-n> :silent noh<CR>
 
+" Move between tabs (forward, backward)
+nmap <C-Tab> :tabn<CR>
+nmap <C-S-Tab> :tabp<CR>
+
 " Quick save, quitting, (both), quitting all
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
 nmap <leader>qa :qa<CR>
+
+" Change the case of a word
+nmap <leader>u mQviwU`q
+nmap <leader>l mQviwu`Q
+
+" Create the directory containing the file in the buffer
+nmap <silent> <leader>md :!mkdir -p %:p:h<CR>
 
 " ====== [ Misc ] ======
 
