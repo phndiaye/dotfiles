@@ -114,6 +114,7 @@ NeoBundle 'tomasr/molokai'
 
 " Syntax highlighters
 NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'tclh123/vim-thrift'
 
 NeoBundleCheck
 
