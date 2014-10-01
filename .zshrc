@@ -48,6 +48,8 @@ setopt NO_NOMATCH
 alias glg='git customlog'
 alias gg='git customgrep'
 
+alias fs='foreman start'
+
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
