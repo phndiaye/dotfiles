@@ -106,6 +106,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'thoughtbot/vim-rspec'
+NeoBundle 'MatchTag'
 
 " Colorschemes
 NeoBundle 'tomasr/molokai'
